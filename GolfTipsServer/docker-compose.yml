@@ -1,0 +1,26 @@
+# version: '3.8'
+
+# services:
+
+#   web:
+#   #tells docker to build a dockerfile in the current directory
+#   build: 
+#     context: .
+#     dockerfile: Dockerfile
+#     container_name: golf-tips-server
+#   #the port to be listening to 
+#   ports:
+#     - "3000:3000"
+#   environment:
+#     - NODE_ENV = development
+#   #mounts local folders into containers
+#   volumes:
+#     - .:/app
+#     - /app/node_modules
+  
+
+#   command: npm start 
+
+#   #build & run: docker-compose up --build
+
+#   #stop: docker-compose down

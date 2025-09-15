@@ -1,0 +1,94 @@
+.form-container{
+  display: flex;
+  max-width: 750px;
+  justify-content: center;
+
+}
+form {
+    max-width: 500px;
+    margin: 20px;
+    background: #C5BD74;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+  
+  }
+  body{
+    background-color: #F0E5C3;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  label {
+    display: block;
+    margin-top: 1rem;
+    color: #013d35;
+  }
+  .add-tip-form{
+    width: 60%;
+  }
+  input, textarea, select, button {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.25rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  button {
+    background: #00695B;
+    color: #F0E5C3;
+    margin-top: 1.5rem;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  button:hover {
+    background: #3E8F72;
+    color: white;
+  }
+  .delete-button{
+    background: #692100;
+  }
+  .delete-button:hover {
+    background: #8c2f04;
+    color: white;
+  }
+  h2, p{
+    color: #00695B;
+  }
+  .text-description{
+    height: auto;
+    display: flex;
+    align-self: center;
+    text-align: center;
+
+  }
+  .text-description p{
+    margin: 0px;
+  }
+  
+  .logo-image{
+    max-width: 300px;
+    margin-bottom: -20px;
+  }
+  .image-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .container{
+    background-color: rgb(248, 240, 230);
+    padding: 20px;
+    border-radius: 20px
+  }
+  .option-text{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    padding-top: 20px;
+  }

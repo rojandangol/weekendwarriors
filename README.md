@@ -142,3 +142,4 @@ For Stipe API setup, read: https://docs.stripe.com/payments/accept-a-payment?pla
 Should be straight forward. It is easy and convenient to use.
 
 
+# This was hosted on AWS but since we're done w the project, all the API points have been replaced with localhost

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sample Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <h2>Welcome Admin to the...</h2>
+    <div class="image-container">
+      <img class="logo-image" src="/GolfTips/assets/logos/weekend-warrior-logo-green.png" alt="logo weekend warriors">
+
+
+    </div>
+    <h2 class="option-text">Please pick an Option Below</h2>
+    <div class="form-container">
+      <!-- Add Tip Form -->
+      <form id="tipForm" class="form add-tip-form">
+        <h2>Add a New Golf Tip</h2>
+        <div class="text-description">
+          <p> Here you can add a tip and give it a title, description, and video. You will have to either assign the tip to a catagory or make a new one</p>
+        </div>
+        <label for="title">Tip Title *</label>
+        <input type="text" id="title" name="title" required />
+
+        <label for="body">Tip Description *</label>
+        <textarea id="body" name="body" required></textarea>
+
+        <label for="video">Attach a Video URL (optional) <br>  Example: https://www.example.com </label>
+        <input type="text" id="video" name="video" />
+
+        <label for="category">Select a Category</label>
+        <select id="category" name="category">
+          <option value="">-- Choose an existing category --</option>
+          <option value="Driving">Driving</option>
+          <option value="Putting">Putting</option>
+          <option value="Chipping">Chipping</option>
+        </select>
+
+        <label for="newCategory">Or Create a New Category</label>
+        <input type="text" id="newCategory" name="newCategory" placeholder="e.g., Bunker Shots" />
+
+        <button type="submit">Add Tip</button>
+      </form>
+
+      <!-- Remove Tip Form -->
+      <div class="stack-delete-forms">
+        <form id="removeTipForm" class="form remove-tip-form">
+          <h2>Delete an Existing Tip</h2>
+          <div class="text-description">
+            <p> Here you can Delete a tip from a specific catagory</p>
+          </div>
+          <label for="deleteCategorySelect">Choose a Category</label>
+          <select id="deleteCategorySelect">
+            <option value="">-- Select a category --</option>
+            <!-- JS will populate this -->
+          </select>
+          <label for="deleteTipSelect">Choose a Tip to Delete</label>
+          <select id="deleteTipSelect">
+            <option value="">-- Select a tip to delete --</option>
+            <!-- JS will populate this -->
+          </select>
+
+          <button class="delete-button" type="button" id="deleteTipBtn">Delete Selected Tip</button>
+        </form>
+
+        <!-- Delete Category Form -->
+        <form id="removeCategoryForm" class="form remove-category-form">
+          <h2>Delete a Category</h2>
+          <div class="text-description">
+            <p> Here you can delete a catagory. I would proceed with caution because it will delete all tips within that catagory</p>
+          </div>
+          <label for="deleteCategorySelect">Choose a Category to Delete</label>
+          <select id="deleteCategorySelect">
+            <option value="">-- Select a category to delete --</option>
+            <!-- JS will populate this -->
+          </select>
+
+          <button class="delete-button" type="button" id="deleteCategoryBtn">Delete Selected Category</button>
+        </form>
+      </div>
+
+    </div>
+
+
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

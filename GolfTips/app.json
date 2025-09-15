@@ -1,0 +1,46 @@
+{
+  "expo": {
+    "name": "120+ Tips for the Weekend Warriors",
+    "slug": "golf-tips-for-the-weekend-warriors",
+    "version": "1.0.0",
+    "orientation": "portrait",
+
+    "scheme": "myapp",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.anonymous.golf-tips-for-the-weekend-warriors"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#ffffff"
+      }
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static"
+     
+    },
+    "plugins": [
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#00695B",
+          "image": "./assets/icons/logo.png",
+          "dark": {
+            "image": "./assets/icons/logo.png",
+            "backgroundColor": "#F0E5C3"
+          },
+          "imageWidth": 200
+        }
+      ],
+      "expo-router",
+      "expo-asset",
+      "expo-font"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
